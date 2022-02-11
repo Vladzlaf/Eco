@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-width: 320px;
+    background: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    line-height: 2;
+    color: white;
+}
+
+.header {
+    width: 100%;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+.container {
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-image: url(./assets/svg/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logo:hover {
+	filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav-item {
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    list-style-type: none; 
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.nav-item:hover {
+    color: #bdae82;
+}
+
+.nav-item:last-child {
+    padding-right: 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.main {
+    background-image: url(./assets/img/forest.jpg);
+    background-size: cover;
+    height: 580px;
+    min-height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-player {
+    background-image: url(./assets/svg/play.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: contain;
+    border: 0;
+    height: 160px;
+    width: 160px;
+    transition: 0.3s;
+}
+
+.button-player:hover {
+    filter: brightness(0.85);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #bdae82;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    margin-right: 50px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-item {
+    list-style: none;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+tree-link {
+    height: 65px;
+}
+
+.tree {
+    height: 55px;
+}
+
+.active {
+    filter: invert(24%) sepia(27%) saturate(363%) hue-rotate(7deg) brightness(87%) contrast(90%);
+}
+
+.activePlay {
+    background-image: url(./assets/svg/pause.svg);
+}
